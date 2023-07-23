@@ -6,9 +6,10 @@ import Media from './collections/Media';
 import Pages from './collections/Pages';
 import Experiences from './collections/Experiences';
 import Projects from './collections/Projects';
-import Posts from './collections/Posts';
-import Topics from './collections/Topics';
-import Stacks from './collections/Stacks';
+import Resources from './collections/Resources';
+import Skills from './collections/Skills';
+import { MainMenu } from './globals/MainMenu'
+import { Socials } from './globals/Socials'
 
 export default buildConfig({
   serverURL: 'http://localhost:8000',
@@ -21,9 +22,12 @@ export default buildConfig({
     Pages,
     Experiences,
     Projects,
-    Posts,
-    Topics,
-    Stacks
+    Resources,
+    Skills
+  ],
+  globals: [
+    MainMenu,
+    Socials
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),

@@ -4,7 +4,8 @@ import slug from '../fields/slug'
 const Projects: CollectionConfig = {
     slug: 'projects',
     admin: {
-        useAsTitle: 'title'
+        useAsTitle: 'title',
+        defaultColumns: ['title', 'isComplete', 'slug', 'createdAt']
     },
     access: {
         read: (): boolean => true,
@@ -21,17 +22,10 @@ const Projects: CollectionConfig = {
             type: 'textarea',
         },
         {
-            name: 'featurePost',
-            label: 'Feature Post',
+            name: 'skills',
+            label: 'Skills',
             type: 'relationship',
-            relationTo: 'posts',
-            hasMany: false,
-        },
-        {
-            name: 'stack',
-            label: 'Stack',
-            type: 'relationship',
-            relationTo: 'stacks',
+            relationTo: 'skills',
             hasMany: true,
         },   
         slug,

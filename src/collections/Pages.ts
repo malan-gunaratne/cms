@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload/types'
 import { Page as HomePage } from '../templates/home' 
 import { Page as ExperiencesPage } from '../templates/experience' 
 import { Page as ProjectsPage } from '../templates/projects' 
-import { Page as PostsPage } from '../templates/posts' 
+import { Page as ResourcesPage } from '../templates/resources' 
 import slug from '../fields/slug'
 
 const Pages: CollectionConfig = {
@@ -44,7 +44,7 @@ const Pages: CollectionConfig = {
                 HomePage,
                 ExperiencesPage,
                 ProjectsPage,
-                PostsPage,
+                ResourcesPage,
             ],
             maxRows: 1,
             admin: {

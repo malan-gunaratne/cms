@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload/types'
 
-const Stacks: CollectionConfig = {
-    slug: 'stacks',
+const Skills: CollectionConfig = {
+    slug: 'skills',
     admin: {
         useAsTitle: 'title',
         defaultColumns: ['title', 'description', 'createdAt']
@@ -10,16 +10,6 @@ const Stacks: CollectionConfig = {
         read: (): boolean => true,
     },
     fields: [
-        {
-            name: 'icon',
-            label: 'Skill Icon',
-            type: 'upload',
-            relationTo: 'media',
-            required: true,
-            admin: {
-                position: 'sidebar'
-            }
-        },
         {
             name: 'title',
             label: 'Title',
@@ -33,4 +23,4 @@ const Stacks: CollectionConfig = {
     ]
 }
 
-export default Stacks
+export default Skills

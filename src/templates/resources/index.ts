@@ -1,7 +1,7 @@
 import { Block } from 'payload/types'
 
 export const Page: Block = {    
-    slug: 'projectsPage',
+    slug: 'resourcesPage',
     fields: [
         {
             name: 'heroContent',

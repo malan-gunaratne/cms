@@ -1,10 +1,10 @@
 import { Block } from 'payload/types'
 
 export const Page: Block = {    
-    slug: 'experiencesPage',
+    slug: 'workExperiencePage',
     fields: [
         {
-            name: 'hero',
+            name: 'heroContent',
             label: 'Hero Section',
             type: 'group',
             fields: [
@@ -21,58 +21,18 @@ export const Page: Block = {
             ]
         },
         {
-            name: 'milestones',
-            label: 'Career',
-            type: 'group',
+            name: 'experiences',
+            label: 'Experiences',
+            type: 'array',
             fields: [
                 {
-                    name: 'experiences',
-                    label: 'Experiences',
-                    type: 'array',
-                    fields: [
-                        {
-                            type: 'row',
-                            fields: [
-                                {
-                                    name: 'title',
-                                    type: 'text',
-                                    required: true,
-                                },
-                                {
-                                    name: 'dates',
-                                    type: 'text',
-                                    required: true,
-                                },
-
-                            ],
-                        },
-                        {
-                            name: 'experience',
-                            type: 'relationship',
-                            relationTo: 'experiences',
-                            required: true,
-                        },
-                        {
-                            name: 'descriptions',
-                            label: 'Preview Descriptions',
-                            type: 'array',
-                            fields: [
-                                {
-                                    name: 'heading',
-                                    type: 'text',
-                                    required: true,
-                                },
-                                {
-                                    name: 'body',
-                                    type: 'textarea',
-                                    required: true,
-                                }
-                            ]
-                        },
-                    ],
-                }
+                    name: 'experience',
+                    type: 'relationship',
+                    relationTo: 'experiences',
+                    required: true,
+                },
             ]
-        }
+        },
     ]   
 }
 

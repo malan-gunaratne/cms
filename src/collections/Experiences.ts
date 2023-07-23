@@ -16,28 +16,18 @@ const Experiences: CollectionConfig = {
             type: 'text'
         },
         {
-            name: 'featurePost',
-            label: 'Feature Post',
-            type: 'relationship',
-            relationTo: 'posts',
-            hasMany: false,
+            name: 'description',
+            label: 'Description',
+            type: 'textarea',
         },
         {
-            name: 'stack',
-            label: 'Stack',
+            name: 'skills',
+            label: 'Skills',
             type: 'relationship',
-            relationTo: 'stacks',
+            relationTo: 'skills',
             hasMany: true,
         },
         slug,
-        {
-            name: 'layout',
-            label: 'Layout',
-            type: 'blocks',
-            blocks: [
-
-            ]
-        },
         {
             name: 'startDate',
             label: 'Start Date',
