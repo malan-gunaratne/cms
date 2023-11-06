@@ -1,7 +1,4 @@
-Progress: In development 
+BE repository for my personal website.
 
-Once complete, this will be the back-end application for my [personal website](https://malandev.com)
-
-The front-end application can be found [here](https://github.com/notmalan/web)
-
+CMS built using [Payload CMS](https://payloadcms.com) served using Express. CMS data is saved using MongoDB Community Edition. 
 
